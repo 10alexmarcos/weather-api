@@ -16,4 +16,11 @@ A simple API project for retrieving weather data.
 
 # 2. Results
 
+#### 2.1 London
 ![London](imagesREADME/London_evolution.png)
+
+#### 2.2 Madrid
+![Madrid](imagesREADME/Madrid_evolution.png)
+
+#### 2.3 Rio
+![Rio](imagesREADME/Rio_evolution.png)
