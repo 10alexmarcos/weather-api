@@ -16,4 +16,4 @@ A simple API project for retrieving weather data.
 
 # 2. Results
 
-![London](results/London_evolution.png)
+![London](imagesREADME/London_evolution.png)
