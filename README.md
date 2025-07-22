@@ -10,3 +10,5 @@ A simple API project for retrieving weather data.
 3. We can add new dependencies with `uv add <package>`
 
 4. Execute `python src/meteo-api.py`
+
+5. Results will be available in results/ folder (created automatically after step 4 execution)
