@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from jsonschema import validate, ValidationError
+import os
 
 logger = logging.getLogger(__name__)  # uses file name as name of the log
 logger.level = logging.INFO
@@ -168,7 +169,10 @@ def visualize_evolution(df: pd.DataFrame, city: str) -> None:
         plt.setp(axes[i].xaxis.get_majorticklabels(), rotation=45, ha="right")
 
     axes[-1].set_xlabel("Date")
-    filename=f"src/module_1/{city}_evolution.png"
+
+
+    os.makedirs("results", exist_ok=True)
+    filename=f"results/{city}_evolution.png"
     plt.savefig(filename, bbox_inches="tight")
     plt.show()
 
