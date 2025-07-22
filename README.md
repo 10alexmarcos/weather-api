@@ -2,7 +2,7 @@
 
 A simple API project for retrieving weather data.
 
-# First steps
+# 1. Execute project
 
 1. Clone the repo
 
@@ -12,3 +12,8 @@ A simple API project for retrieving weather data.
 4. Execute `python src/meteo-api.py`
 
 5. Results will be available in results/ folder (created automatically after step 4 execution)
+
+
+# 2. Results
+
+![London](results/London_evolution.png)
