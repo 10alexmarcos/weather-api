@@ -174,16 +174,16 @@ def visualize_evolution(df: pd.DataFrame, city: str) -> None:
     os.makedirs("results", exist_ok=True)
     filename=f"results/{city}_evolution.png"
     plt.savefig(filename, bbox_inches="tight")
-    plt.show()
+    #plt.show()
 
 
 def main():
-    city = "Rio"
-    response = get_data_meteo_api(city)
-    validate_response(response)
-    df = process_response(response, city)
-    df_monthly = daily_data_to_monthly_data(df, city)
-    visualize_evolution(df_monthly, city)
+    for city in CITIES:
+        response = get_data_meteo_api(city)
+        validate_response(response)
+        df = process_response(response, city)
+        df_monthly = daily_data_to_monthly_data(df, city)
+        visualize_evolution(df_monthly, city)
 
 
 if __name__ == "__main__":
